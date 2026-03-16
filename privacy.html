@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gizlilik Politikası – Plaka Kontrol TR</title>
+  <title>Privacy Policy – Plaka Kontrol TR</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,95 +18,130 @@
     h2 { color: #444; margin-top: 30px; }
     footer { margin-top: 40px; font-size: 13px; color: #888; }
     a { color: #c0392b; }
+    .lang-switcher { text-align: right; margin-bottom: 20px; }
+    .lang-btn {
+      background: #c0392b;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .lang-btn:hover { background: #a93226; }
+    .content { display: none; }
+    .content.active { display: block; }
   </style>
 </head>
 <body>
 
-<h1>Gizlilik Politikası</h1>
-<p><strong>Son güncelleme:</strong> 16 Mart 2026</p>
+  <div class="lang-switcher">
+    <button class="lang-btn" onclick="switchLang()">🇹🇷 Türkçe</button>
+  </div>
 
-<p>
-Plaka Kontrol TR uygulamasını kullandığınız için teşekkür ederiz.
-Bu gizlilik politikası, uygulamanın hangi verileri topladığını ve nasıl kullandığını açıklar.
-</p>
+  <!-- ENGLISH -->
+  <div class="content active" id="en">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> March 16, 2026</p>
+    <p>Thank you for using Plate Control TR. This Privacy Policy explains what data the application collects and how it is used.</p>
 
-<h2>1. Kamera Kullanımı</h2>
-<p>
-Uygulama, plaka analizi yapabilmek için cihaz kamerasına erişim ister.
-Kamera yalnızca kullanıcı tarafından başlatılan tarama işlemi sırasında kullanılır.
-</p>
+    <h2>1. Camera Usage</h2>
+    <p>The application requires access to the device camera in order to scan license plates. The camera is used only when the user starts a scan.</p>
 
-<h2>2. Görüntü İşleme ve Sunucu Kullanımı</h2>
-<p>
-Kullanıcı tarafından çekilen plaka görüntüleri, analiz yapılabilmesi için
-uygulamanın sunucularına gönderilebilir.
+    <h2>2. Image Processing and Server Usage</h2>
+    <p>Images captured by the user may be sent to the application server for analysis. The images are processed only to perform license plate verification. Images are processed temporarily and are not stored permanently. All data is deleted after the analysis is completed. No data is shared with third parties.</p>
 
-Gönderilen görüntüler yalnızca plaka doğrulama işlemi için geçici olarak işlenir.
-Bu veriler kalıcı olarak saklanmaz ve analiz tamamlandıktan sonra silinir.
+    <h2>3. Collected Data</h2>
+    <p>The application may automatically collect technical information such as:</p>
+    <ul>
+      <li>Device type</li>
+      <li>Operating system</li>
+      <li>IP address</li>
+      <li>App usage statistics</li>
+      <li>Crash logs</li>
+    </ul>
+    <p>This information is used only to improve application performance.</p>
 
-Veriler hiçbir şekilde üçüncü kişilerle paylaşılmaz.
-</p>
+    <h2>4. Advertising</h2>
+    <p>The application may use third-party advertising services such as Google AdMob. These services may collect anonymous technical information such as device identifiers.</p>
+    <p>AdMob Privacy Policy:<br>
+    <a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></p>
 
-<h2>3. Toplanan Veriler</h2>
-<p>
-Uygulama aşağıdaki teknik bilgileri otomatik olarak toplayabilir:
-</p>
+    <h2>5. Third-Party Services</h2>
+    <p>The application may use third-party services for analytics and advertising. These services have their own privacy policies.</p>
 
-<ul>
-<li>Cihaz türü</li>
-<li>İşletim sistemi</li>
-<li>IP adresi</li>
-<li>Uygulama kullanım bilgileri</li>
-<li>Hata kayıtları</li>
-</ul>
+    <h2>6. Children</h2>
+    <p>The application is not intended for children under 13. No personal data is knowingly collected from children.</p>
 
-<p>
-Bu veriler yalnızca uygulamanın performansını iyileştirmek amacıyla kullanılır.
-</p>
+    <h2>7. Changes</h2>
+    <p>This privacy policy may be updated. Changes will be published on this page.</p>
 
-<h2>4. Reklamlar</h2>
-<p>
-Uygulama üçüncü taraf reklam hizmetleri kullanabilir.
-Bu hizmetler cihazınıza ait bazı anonim bilgileri toplayabilir.
-</p>
+    <h2>8. Contact</h2>
+    <p>For questions: <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a></p>
 
-<p>
-Google AdMob gizlilik politikası:
-<br>
-<a href="https://support.google.com/admob/answer/6128543?hl=tr" target="_blank">
-https://support.google.com/admob/answer/6128543
-</a>
-</p>
+    <footer>© 2026 Plate Control TR</footer>
+  </div>
 
-<h2>5. Üçüncü Taraf Hizmetler</h2>
-<p>
-Uygulama, analiz ve reklam hizmetleri için üçüncü taraf servisler kullanabilir.
-Bu servislerin veri kullanımı kendi gizlilik politikalarına tabidir.
-</p>
+  <!-- TÜRKÇE -->
+  <div class="content" id="tr">
+    <h1>Gizlilik Politikası</h1>
+    <p><strong>Son güncelleme:</strong> 16 Mart 2026</p>
+    <p>Plaka Kontrol TR uygulamasını kullandığınız için teşekkür ederiz. Bu gizlilik politikası, uygulamanın hangi verileri topladığını ve nasıl kullandığını açıklar.</p>
 
-<h2>6. Çocukların Gizliliği</h2>
-<p>
-Uygulama 13 yaş altı çocuklara yönelik değildir.
-Bilerek çocuklardan kişisel veri toplanmaz.
-</p>
+    <h2>1. Kamera Kullanımı</h2>
+    <p>Uygulama, plaka analizi yapabilmek için cihaz kamerasına erişim ister. Kamera yalnızca kullanıcı tarafından başlatılan tarama işlemi sırasında kullanılır.</p>
 
-<h2>7. Değişiklikler</h2>
-<p>
-Bu gizlilik politikası zaman zaman güncellenebilir.
-Değişiklikler bu sayfada yayınlanır.
-</p>
+    <h2>2. Görüntü İşleme ve Sunucu Kullanımı</h2>
+    <p>Kullanıcı tarafından çekilen plaka görüntüleri, analiz yapılabilmesi için uygulamanın sunucularına gönderilebilir. Gönderilen görüntüler yalnızca plaka doğrulama işlemi için geçici olarak işlenir. Bu veriler kalıcı olarak saklanmaz ve analiz tamamlandıktan sonra silinir. Veriler hiçbir şekilde üçüncü kişilerle paylaşılmaz.</p>
 
-<h2>8. İletişim</h2>
-<p>
-Sorular için:
-<a href="mailto:umuryasin26@gmail.com">
-umuryasin26@gmail.com
-</a>
-</p>
+    <h2>3. Toplanan Veriler</h2>
+    <p>Uygulama aşağıdaki teknik bilgileri otomatik olarak toplayabilir:</p>
+    <ul>
+      <li>Cihaz türü</li>
+      <li>İşletim sistemi</li>
+      <li>IP adresi</li>
+      <li>Uygulama kullanım bilgileri</li>
+      <li>Hata kayıtları</li>
+    </ul>
+    <p>Bu veriler yalnızca uygulamanın performansını iyileştirmek amacıyla kullanılır.</p>
 
-<footer>
-© 2026 Plaka Kontrol TR
-</footer>
+    <h2>4. Reklamlar</h2>
+    <p>Uygulama üçüncü taraf reklam hizmetleri kullanabilir. Bu hizmetler cihazınıza ait bazı anonim bilgileri toplayabilir.</p>
+    <p>Google AdMob gizlilik politikası:<br>
+    <a href="https://support.google.com/admob/answer/6128543?hl=tr" target="_blank">https://support.google.com/admob/answer/6128543</a></p>
+
+    <h2>5. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama, analiz ve reklam hizmetleri için üçüncü taraf servisler kullanabilir. Bu servislerin veri kullanımı kendi gizlilik politikalarına tabidir.</p>
+
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>Uygulama 13 yaş altı çocuklara yönelik değildir. Bilerek çocuklardan kişisel veri toplanmaz.</p>
+
+    <h2>7. Değişiklikler</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlanır.</p>
+
+    <h2>8. İletişim</h2>
+    <p>Sorular için: <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a></p>
+
+    <footer>© 2026 Plaka Kontrol TR</footer>
+  </div>
+
+  <script>
+    function switchLang() {
+      const en = document.getElementById('en');
+      const tr = document.getElementById('tr');
+      const btn = document.querySelector('.lang-btn');
+      if (en.classList.contains('active')) {
+        en.classList.remove('active');
+        tr.classList.add('active');
+        btn.textContent = '🇬🇧 English';
+      } else {
+        tr.classList.remove('active');
+        en.classList.add('active');
+        btn.textContent = '🇹🇷 Türkçe';
+      }
+    }
+  </script>
 
 </body>
 </html>
