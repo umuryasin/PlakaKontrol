@@ -7,31 +7,103 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 20px;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
+      padding: 24px;
+      background: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.7;
     }
-    h1 { color: #c0392b; }
-    h2 { color: #444; margin-top: 30px; }
-    footer { margin-top: 40px; font-size: 13px; color: #888; }
-    a { color: #c0392b; }
-    .lang-switcher { text-align: right; margin-bottom: 20px; }
+
+    h1 {
+      color: #12367F;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #12367F;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0 0 14px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #12367F;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
     .lang-btn {
-      background: #c0392b;
-      color: white;
+      background: #12367F;
+      color: #fff;
       border: none;
-      padding: 8px 18px;
-      border-radius: 6px;
+      padding: 10px 18px;
+      border-radius: 8px;
       cursor: pointer;
       font-size: 14px;
       font-weight: bold;
     }
-    .lang-btn:hover { background: #a93226; }
-    .content { display: none; }
-    .content.active { display: block; }
+
+    .lang-btn:hover {
+      background: #0f2f6d;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #dbe3ee;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(18, 54, 127, 0.06);
+    }
+
+    .content {
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    .meta {
+      color: #6b7280;
+      margin-bottom: 22px;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid #dbe3ee;
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .top-link {
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -40,90 +112,299 @@
     <button class="lang-btn" onclick="switchLang()">🇹🇷 Türkçe</button>
   </div>
 
-  <!-- ENGLISH -->
-  <div class="content active" id="en">
-    <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> March 16, 2026</p>
-    <p>Thank you for using Plate Control TR. This Privacy Policy explains what data the application collects and how it is used.</p>
+  <div class="card">
 
-    <h2>1. Camera Usage</h2>
-    <p>The application requires access to the device camera in order to scan license plates. The camera is used only when the user starts a scan.</p>
+    <!-- ENGLISH -->
+    <div class="content active" id="en">
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Last updated:</strong> March 16, 2026</p>
 
-    <h2>2. Image Processing and Server Usage</h2>
-    <p>Images captured by the user may be sent to the application server for analysis. The images are processed only to perform license plate verification. Images are processed temporarily and are not stored permanently. All data is deleted after the analysis is completed. No data is shared with third parties.</p>
+      <p>
+        This Privacy Policy applies to the <strong>Plaka Kontrol TR</strong> mobile application
+        (the “Application”), developed by <strong>Umur Alper</strong> (the “Service Provider”).
+        The Application is provided as a free service and is intended for use as is.
+      </p>
 
-    <h2>3. Collected Data</h2>
-    <p>The application may automatically collect technical information such as:</p>
-    <ul>
-      <li>Device type</li>
-      <li>Operating system</li>
-      <li>IP address</li>
-      <li>App usage statistics</li>
-      <li>Crash logs</li>
-    </ul>
-    <p>This information is used only to improve application performance.</p>
+      <h2>1. Information Collection and Use</h2>
+      <p>
+        The Application may collect certain information automatically when you use it. This may include:
+      </p>
+      <ul>
+        <li>Your device Internet Protocol address (IP address)</li>
+        <li>Device type and operating system</li>
+        <li>Application usage information</li>
+        <li>Crash logs and diagnostic data</li>
+        <li>The pages or screens you visit and the time spent on them</li>
+      </ul>
 
-    <h2>4. Advertising</h2>
-    <p>The application may use third-party advertising services such as Google AdMob. These services may collect anonymous technical information such as device identifiers.</p>
-    <p>AdMob Privacy Policy:<br>
-    <a href="https://support.google.com/admob/answer/6128543" target="_blank">https://support.google.com/admob/answer/6128543</a></p>
+      <p>
+        This information is used only to operate, maintain, and improve the Application.
+      </p>
 
-    <h2>5. Third-Party Services</h2>
-    <p>The application may use third-party services for analytics and advertising. These services have their own privacy policies.</p>
+      <h2>2. Camera Usage</h2>
+      <p>
+        The Application requires access to your device camera in order to scan and analyze vehicle license plates.
+        The camera is used only when you actively choose to start a scan.
+      </p>
 
-    <h2>6. Children</h2>
-    <p>The application is not intended for children under 13. No personal data is knowingly collected from children.</p>
+      <h2>3. Image Processing and Server Usage</h2>
+      <p>
+        Images captured by the user may be transmitted securely to the Application server for license plate analysis
+        and verification.
+      </p>
+      <p>
+        These images are processed only for providing the Application’s core functionality. They are processed
+        temporarily, are not stored permanently, and are deleted after the analysis is completed.
+      </p>
+      <p>
+        The Application does not share these images with third parties except where required by law.
+      </p>
 
-    <h2>7. Changes</h2>
-    <p>This privacy policy may be updated. Changes will be published on this page.</p>
+      <h2>4. Location Information</h2>
+      <p>
+        The Application does not collect precise location information from your mobile device.
+      </p>
 
-    <h2>8. Contact</h2>
-    <p>For questions: <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a></p>
+      <h2>5. Artificial Intelligence and Automated Analysis</h2>
+      <p>
+        The Application may use automated image analysis or artificial intelligence–based methods
+        to help evaluate license plate images submitted by the user.
+      </p>
+      <p>
+        Such processing is used only to provide the requested feature and is not used to identify users personally.
+      </p>
 
-    <footer>© 2026 Plate Control TR</footer>
-  </div>
+      <h2>6. Third-Party Services</h2>
+      <p>
+        The Application may use third-party services that have their own privacy policies.
+        These services may collect technical data in accordance with their own terms.
+      </p>
+      <p>
+        Third-party services used by the Application may include:
+      </p>
+      <ul>
+        <li>
+          <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">
+            Google AdMob
+          </a>
+        </li>
+      </ul>
 
-  <!-- TÜRKÇE -->
-  <div class="content" id="tr">
-    <h1>Gizlilik Politikası</h1>
-    <p><strong>Son güncelleme:</strong> 16 Mart 2026</p>
-    <p>Plaka Kontrol TR uygulamasını kullandığınız için teşekkür ederiz. Bu gizlilik politikası, uygulamanın hangi verileri topladığını ve nasıl kullandığını açıklar.</p>
+      <h2>7. Advertising</h2>
+      <p>
+        The Application may display advertisements provided by third-party advertising partners such as Google AdMob.
+        These services may use device identifiers and similar technical information to provide and improve ads.
+      </p>
 
-    <h2>1. Kamera Kullanımı</h2>
-    <p>Uygulama, plaka analizi yapabilmek için cihaz kamerasına erişim ister. Kamera yalnızca kullanıcı tarafından başlatılan tarama işlemi sırasında kullanılır.</p>
+      <h2>8. Data Retention</h2>
+      <p>
+        Technical and diagnostic information may be retained for as long as reasonably necessary to maintain,
+        secure, and improve the Application.
+      </p>
+      <p>
+        License plate images submitted for analysis are not stored permanently and are deleted after processing is complete.
+      </p>
 
-    <h2>2. Görüntü İşleme ve Sunucu Kullanımı</h2>
-    <p>Kullanıcı tarafından çekilen plaka görüntüleri, analiz yapılabilmesi için uygulamanın sunucularına gönderilebilir. Gönderilen görüntüler yalnızca plaka doğrulama işlemi için geçici olarak işlenir. Bu veriler kalıcı olarak saklanmaz ve analiz tamamlandıktan sonra silinir. Veriler hiçbir şekilde üçüncü kişilerle paylaşılmaz.</p>
+      <h2>9. Data Deletion Requests</h2>
+      <p>
+        If you have questions about data handling or wish to request deletion of any data associated with your use
+        of the Application, you may contact the Service Provider at:
+        <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a>
+      </p>
 
-    <h2>3. Toplanan Veriler</h2>
-    <p>Uygulama aşağıdaki teknik bilgileri otomatik olarak toplayabilir:</p>
-    <ul>
-      <li>Cihaz türü</li>
-      <li>İşletim sistemi</li>
-      <li>IP adresi</li>
-      <li>Uygulama kullanım bilgileri</li>
-      <li>Hata kayıtları</li>
-    </ul>
-    <p>Bu veriler yalnızca uygulamanın performansını iyileştirmek amacıyla kullanılır.</p>
+      <h2>10. Disclosure of Information</h2>
+      <p>
+        The Service Provider may disclose information:
+      </p>
+      <ul>
+        <li>if required by law or legal process,</li>
+        <li>to protect rights, safety, or investigate fraud,</li>
+        <li>to trusted service providers working on behalf of the Service Provider under appropriate obligations.</li>
+      </ul>
 
-    <h2>4. Reklamlar</h2>
-    <p>Uygulama üçüncü taraf reklam hizmetleri kullanabilir. Bu hizmetler cihazınıza ait bazı anonim bilgileri toplayabilir.</p>
-    <p>Google AdMob gizlilik politikası:<br>
-    <a href="https://support.google.com/admob/answer/6128543?hl=tr" target="_blank">https://support.google.com/admob/answer/6128543</a></p>
+      <h2>11. Children’s Privacy</h2>
+      <p>
+        The Application is not intended for children under the age of 13.
+        The Service Provider does not knowingly collect personal information from children under 13.
+      </p>
+      <p>
+        If you believe a child has provided personal information, please contact the Service Provider so appropriate action can be taken.
+      </p>
 
-    <h2>5. Üçüncü Taraf Hizmetler</h2>
-    <p>Uygulama, analiz ve reklam hizmetleri için üçüncü taraf servisler kullanabilir. Bu servislerin veri kullanımı kendi gizlilik politikalarına tabidir.</p>
+      <h2>12. Security</h2>
+      <p>
+        The Service Provider takes reasonable administrative, technical, and organizational measures
+        to protect the information processed through the Application.
+      </p>
 
-    <h2>6. Çocukların Gizliliği</h2>
-    <p>Uygulama 13 yaş altı çocuklara yönelik değildir. Bilerek çocuklardan kişisel veri toplanmaz.</p>
+      <h2>13. Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time.
+        Any changes will be posted on this page with an updated effective date.
+      </p>
 
-    <h2>7. Değişiklikler</h2>
-    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlanır.</p>
+      <h2>14. Your Consent</h2>
+      <p>
+        By using the Application, you consent to the processing of information as described in this Privacy Policy.
+      </p>
 
-    <h2>8. İletişim</h2>
-    <p>Sorular için: <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a></p>
+      <h2>15. Contact Us</h2>
+      <p>
+        If you have any questions regarding privacy while using the Application, please contact:
+        <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a>
+      </p>
 
-    <footer>© 2026 Plaka Kontrol TR</footer>
+      <a class="top-link" href="index.html">← Home / Ana Sayfa</a>
+
+      <footer>
+        © 2026 Plaka Kontrol TR
+      </footer>
+    </div>
+
+    <!-- TURKISH -->
+    <div class="content" id="tr">
+      <h1>Gizlilik Politikası</h1>
+      <p class="meta"><strong>Son güncelleme:</strong> 16 Mart 2026</p>
+
+      <p>
+        Bu Gizlilik Politikası, <strong>Umur Alper</strong> tarafından geliştirilen
+        <strong>Plaka Kontrol TR</strong> mobil uygulaması (“Uygulama”) için geçerlidir.
+        Uygulama ücretsiz olarak sunulmaktadır ve mevcut haliyle kullanılmak üzere sağlanır.
+      </p>
+
+      <h2>1. Bilgi Toplama ve Kullanım</h2>
+      <p>
+        Uygulama kullanımı sırasında bazı bilgiler otomatik olarak toplanabilir. Bunlar şunları içerebilir:
+      </p>
+      <ul>
+        <li>Cihazınızın IP adresi</li>
+        <li>Cihaz türü ve işletim sistemi</li>
+        <li>Uygulama kullanım bilgileri</li>
+        <li>Hata kayıtları ve tanılama verileri</li>
+        <li>Ziyaret edilen ekranlar ve bu ekranlarda geçirilen süre</li>
+      </ul>
+
+      <p>
+        Bu bilgiler yalnızca Uygulama’yı çalıştırmak, sürdürmek ve geliştirmek amacıyla kullanılır.
+      </p>
+
+      <h2>2. Kamera Kullanımı</h2>
+      <p>
+        Uygulama, araç plakalarını taramak ve analiz etmek amacıyla cihaz kamerasına erişim ister.
+        Kamera yalnızca kullanıcı tarama işlemini başlattığında kullanılır.
+      </p>
+
+      <h2>3. Görüntü İşleme ve Sunucu Kullanımı</h2>
+      <p>
+        Kullanıcı tarafından çekilen görüntüler, plaka analizi ve doğrulama işlemi için güvenli şekilde
+        Uygulama sunucularına gönderilebilir.
+      </p>
+      <p>
+        Bu görüntüler yalnızca Uygulama’nın temel işlevini sağlamak amacıyla geçici olarak işlenir.
+        Kalıcı olarak saklanmaz ve analiz tamamlandıktan sonra silinir.
+      </p>
+      <p>
+        Bu görüntüler, yasal zorunluluklar dışında üçüncü kişilerle paylaşılmaz.
+      </p>
+
+      <h2>4. Konum Bilgisi</h2>
+      <p>
+        Uygulama, mobil cihazınızdan hassas konum bilgisi toplamaz.
+      </p>
+
+      <h2>5. Yapay Zekâ ve Otomatik Analiz</h2>
+      <p>
+        Uygulama, kullanıcı tarafından gönderilen plaka görüntülerini değerlendirmek için
+        otomatik görüntü analizi veya yapay zekâ tabanlı yöntemler kullanabilir.
+      </p>
+      <p>
+        Bu işlemler yalnızca talep edilen özelliği sunmak amacıyla yapılır ve kullanıcıları kişisel olarak tanımlamak için kullanılmaz.
+      </p>
+
+      <h2>6. Üçüncü Taraf Hizmetler</h2>
+      <p>
+        Uygulama, kendi gizlilik politikalarına sahip üçüncü taraf hizmetlerden yararlanabilir.
+        Bu hizmetler kendi koşullarına göre teknik veri toplayabilir.
+      </p>
+      <p>
+        Uygulamada kullanılan üçüncü taraf hizmetler şunları içerebilir:
+      </p>
+      <ul>
+        <li>
+          <a href="https://support.google.com/admob/answer/6128543?hl=tr" target="_blank" rel="noopener noreferrer">
+            Google AdMob
+          </a>
+        </li>
+      </ul>
+
+      <h2>7. Reklamlar</h2>
+      <p>
+        Uygulama, Google AdMob gibi üçüncü taraf reklam hizmetleri gösterebilir.
+        Bu hizmetler reklam sunumu ve iyileştirmesi amacıyla cihaz tanımlayıcıları ve benzeri teknik bilgileri kullanabilir.
+      </p>
+
+      <h2>8. Veri Saklama</h2>
+      <p>
+        Teknik ve tanılama verileri, Uygulama’yı sürdürmek, güvenliğini sağlamak ve geliştirmek için makul süre boyunca tutulabilir.
+      </p>
+      <p>
+        Analiz için gönderilen plaka görüntüleri kalıcı olarak saklanmaz ve işleme tamamlandıktan sonra silinir.
+      </p>
+
+      <h2>9. Veri Silme Talepleri</h2>
+      <p>
+        Veri işleme hakkında sorularınız varsa veya kullanımınıza bağlı herhangi bir verinin silinmesini talep etmek istiyorsanız,
+        aşağıdaki e-posta adresinden iletişime geçebilirsiniz:
+        <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a>
+      </p>
+
+      <h2>10. Bilgilerin Açıklanması</h2>
+      <p>
+        Hizmet Sağlayıcı aşağıdaki durumlarda bilgi açıklayabilir:
+      </p>
+      <ul>
+        <li>yasal zorunluluk veya resmi süreç gereği,</li>
+        <li>hakları korumak, güvenliği sağlamak veya dolandırıcılığı araştırmak amacıyla,</li>
+        <li>uygun yükümlülükler altında Hizmet Sağlayıcı adına çalışan güvenilir hizmet sağlayıcılarla.</li>
+      </ul>
+
+      <h2>11. Çocukların Gizliliği</h2>
+      <p>
+        Uygulama 13 yaşın altındaki çocuklara yönelik değildir.
+        Hizmet Sağlayıcı, 13 yaş altındaki çocuklardan bilerek kişisel veri toplamaz.
+      </p>
+      <p>
+        Bir çocuğun kişisel bilgi sağladığını düşünüyorsanız, gerekli işlemlerin yapılabilmesi için Hizmet Sağlayıcı ile iletişime geçiniz.
+      </p>
+
+      <h2>12. Güvenlik</h2>
+      <p>
+        Hizmet Sağlayıcı, Uygulama üzerinden işlenen bilgileri korumak için makul idari, teknik ve organizasyonel önlemler almaktadır.
+      </p>
+
+      <h2>13. Bu Politikadaki Değişiklikler</h2>
+      <p>
+        Bu Gizlilik Politikası zaman zaman güncellenebilir.
+        Herhangi bir değişiklik bu sayfada güncellenmiş yürürlük tarihi ile yayınlanacaktır.
+      </p>
+
+      <h2>14. Onayınız</h2>
+      <p>
+        Uygulama’yı kullanarak, bu Gizlilik Politikası’nda açıklandığı şekilde bilgi işlenmesini kabul etmiş olursunuz.
+      </p>
+
+      <h2>15. İletişim</h2>
+      <p>
+        Uygulama’yı kullanırken gizlilik ile ilgili herhangi bir sorunuz varsa, şu adresten iletişime geçebilirsiniz:
+        <a href="mailto:umuryasin26@gmail.com">umuryasin26@gmail.com</a>
+      </p>
+
+      <a class="top-link" href="index.html">← Ana Sayfa / Home</a>
+
+      <footer>
+        © 2026 Plaka Kontrol TR
+      </footer>
+    </div>
   </div>
 
   <script>
@@ -131,14 +412,17 @@
       const en = document.getElementById('en');
       const tr = document.getElementById('tr');
       const btn = document.querySelector('.lang-btn');
+
       if (en.classList.contains('active')) {
         en.classList.remove('active');
         tr.classList.add('active');
         btn.textContent = '🇬🇧 English';
+        document.documentElement.lang = 'tr';
       } else {
         tr.classList.remove('active');
         en.classList.add('active');
         btn.textContent = '🇹🇷 Türkçe';
+        document.documentElement.lang = 'en';
       }
     }
   </script>
